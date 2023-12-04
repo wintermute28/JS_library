@@ -1,8 +1,7 @@
 import './lib/lib'
 
-$('.active').click(sayHello);
+$('button').on("click", function() {
+    $(this).toggleClass('active');
+});
 
-
-function sayHello() {
-    console.log('Hello');
-}
+$('button').addAttribute("type", "name").removeAttribute("type");
