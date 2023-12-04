@@ -1,3 +1,8 @@
 import './lib/lib'
 
-$('div').containClass('active');
+$('.active').click(sayHello);
+
+
+function sayHello() {
+    console.log('Hello');
+}
